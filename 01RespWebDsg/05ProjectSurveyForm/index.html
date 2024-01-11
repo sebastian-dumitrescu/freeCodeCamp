@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This page allows me to complete the project</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Fields in the survery form - first set</legend>
+        <label for="name" id="name-label">
+          Name (required): 
+          <input id="name" type="text" placeholder="Enter your name ..." required/>
+        </label>
+        <label for="email" id="email-label">
+          Email (required): 
+          <input id="email" type="email" placeholder="Enter your email ..." required/>
+        </label>
+        <label for="number" id="number-label">
+          Some number: 
+          <input id="number" type="number" placeholder="Enter a number between 1 and 31" min="1" max="31" />
+        </label>
+        <label for="dropdown">
+          <select id="dropdown">
+            <option>
+              Option no.1
+            </option>  
+            <option>
+              Option no.2
+            </option>  
+            <option>
+              Option no.3
+            </option>  
+          </select>
+        </label>
+        <label for="radio-selection-1">
+          <input type="radio" id="radio-selection-1" name="radio-selection" value="some" class="inline" checked/> Some preference
+        </label>  
+        <label for="radio-selection-2">
+          <input type="radio" id="radio-selection-2" name="radio-selection" value="another" class="inline" /> Another preference
+        </label>  
+      </fieldset>
+      <fieldset>
+        <legend>Fields in the survery form - second set</legend>        
+        <label for="checkbox1">
+          <input type="checkbox" id="checkbox1" value="1" class="inline" /> Select value 1 if you want
+        </label>
+        <label for="checkbox2">
+          <input type="checkbox" id="checkbox2" value="2" class="inline" /> Select value 2 if you want
+        </label>
+        <label for="checkbox3">
+          <input type="checkbox" id="checkbox3" value="3" class="inline" /> Select value 3 if you want
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Fields in the survery form - third set</legend>
+        <label for="your-comments">
+          <textarea rows="5" cols="25" id="your-comments" placeholder="Enter here your comments ...">
+          </textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
